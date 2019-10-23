@@ -1,2 +1,2 @@
-# 08-Breakout
-First 2D Godot Game
+# Project-Template-Godot
+A generic template for a Godot project
