@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/element_blue_rectangle.png-0a13cfb4cbd472d971db955c7e14553b.stex"
+path="res://.import/tile_gray.png-9c40b165b9b75fb2904d1cf8322b6c6f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/element_blue_rectangle.png"
-dest_files=[ "res://.import/element_blue_rectangle.png-0a13cfb4cbd472d971db955c7e14553b.stex" ]
+source_file="res://assets/tile_gray.png"
+dest_files=[ "res://.import/tile_gray.png-9c40b165b9b75fb2904d1cf8322b6c6f.stex" ]
 
 [params]
 

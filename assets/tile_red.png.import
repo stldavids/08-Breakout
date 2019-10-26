@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/element_purple_rectangle.png-70f34e395b5bb76a979fef9df2069f7f.stex"
+path="res://.import/tile_red.png-5aed8840c7bba700b6667355fafc24fc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/element_purple_rectangle.png"
-dest_files=[ "res://.import/element_purple_rectangle.png-70f34e395b5bb76a979fef9df2069f7f.stex" ]
+source_file="res://assets/tile_red.png"
+dest_files=[ "res://.import/tile_red.png-5aed8840c7bba700b6667355fafc24fc.stex" ]
 
 [params]
 
