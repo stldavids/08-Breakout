@@ -1,11 +1,10 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Scenes/Paddle.gd" type="Script" id=1]
 [ext_resource path="res://assets/paddleBlu.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/Ball.gd" type="Script" id=3]
 [ext_resource path="res://assets/ballGrey.png" type="Texture" id=4]
-[ext_resource path="res://Scenes/Tile.gd" type="Script" id=5]
-[ext_resource path="res://assets/tile_gray.png" type="Texture" id=6]
+[ext_resource path="res://Scenes/Tile.tscn" type="PackedScene" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 64, 10 )
@@ -15,9 +14,6 @@ friction = 0.0
 bounce = 1.0
 
 [sub_resource type="CircleShape2D" id=2]
-
-[sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 32, 16.5756 )
 
 [node name="World" type="Node"]
 
@@ -65,17 +61,28 @@ polygon = PoolVector2Array( -64, -64, 1088, -64, 1088, 640, 1024, 640, 1024, 0, 
 
 [node name="Gray Tiles" type="Node" parent="Tiles"]
 
-[node name="Tile" type="StaticBody2D" parent="Tiles/Gray Tiles" groups=[
-"Tiles",
-]]
-position = Vector2( 128, 368 )
-script = ExtResource( 5 )
-__meta__ = {
-"_edit_group_": true
-}
+[node name="Tile" parent="Tiles/Gray Tiles" instance=ExtResource( 5 )]
 
-[node name="Sprite" type="Sprite" parent="Tiles/Gray Tiles/Tile"]
-texture = ExtResource( 6 )
+[node name="Tile2" parent="Tiles/Gray Tiles" instance=ExtResource( 5 )]
+position = Vector2( 224, 368 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles/Gray Tiles/Tile"]
-shape = SubResource( 4 )
+[node name="Tile3" parent="Tiles/Gray Tiles" instance=ExtResource( 5 )]
+position = Vector2( 320, 368 )
+
+[node name="Tile4" parent="Tiles/Gray Tiles" instance=ExtResource( 5 )]
+position = Vector2( 416, 368 )
+
+[node name="Tile5" parent="Tiles/Gray Tiles" instance=ExtResource( 5 )]
+position = Vector2( 512, 368 )
+
+[node name="Tile6" parent="Tiles/Gray Tiles" instance=ExtResource( 5 )]
+position = Vector2( 608, 368 )
+
+[node name="Tile7" parent="Tiles/Gray Tiles" instance=ExtResource( 5 )]
+position = Vector2( 704, 368 )
+
+[node name="Tile8" parent="Tiles/Gray Tiles" instance=ExtResource( 5 )]
+position = Vector2( 800, 368 )
+
+[node name="Tile9" parent="Tiles/Gray Tiles" instance=ExtResource( 5 )]
+position = Vector2( 896, 368 )

@@ -4,12 +4,12 @@
 [ext_resource path="res://assets/tile_gray.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 32, 16.2241 )
+extents = Vector2( 32, 16.5756 )
 
 [node name="Tile" type="StaticBody2D" groups=[
 "Tiles",
 ]]
-position = Vector2( 128, 304 )
+position = Vector2( 128, 368 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
@@ -18,5 +18,5 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 2 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 4 )
