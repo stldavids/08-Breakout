@@ -46,7 +46,6 @@ editor/display_folded = true
 polygon = PoolVector2Array( -64, -64, 1088, -64, 1088, 640, 1024, 640, 1024, 0, 0, 0, 0, 640, -64, 640, -64, -64 )
 
 [node name="Tiles" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="Gray Tiles" type="Node" parent="Tiles"]
 editor/display_folded = true
