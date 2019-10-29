@@ -1,13 +1,13 @@
 extends Node
 
-export var score = 0
+export var score = 1350
 export var lives = 3
 
 func increase_score(s):
  score += int(s)
  find_node("Score").update_score()
-	if score == 1350:
-		get_tree().change_scene("res://Scenes/World2.tscn")
+	if score == 2100:
+		get_tree().change_scene("res://Scenes/Win.tscn")
  
 func decrease_lives():
  lives -= 1

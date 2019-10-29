@@ -7,7 +7,15 @@ func _ready():
 
 func _physics_process(delta):
  var mouse_x = get_viewport().get_mouse_position().x
+ var bodies = get_slide_collision(1)
  position = Vector2(mouse_x, position.y)
+
+# for body in bodies:
+ # if body.get_name() == "Speed":
+
+#   body.queue_free()
+#  if body.get_name() == "Paddle":
+#   pass
 
 func _input(event):
  if event is InputEventMouseButton and event.pressed:
@@ -17,3 +25,4 @@ func _input(event):
    ball.name = "Ball"
    ball.linear_velocity = Vector2(200, -200)
    get_parent().add_child(ball)
+
