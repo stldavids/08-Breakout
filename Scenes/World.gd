@@ -1,9 +1,12 @@
 extends Node
 
-var score = 0 setget set_score
+export var score = 0
+export var lives = 3
 
-func set_score(value):
-	score = value
-	get_node("GUI/Score").settext("Score: "+str(score))
-	
-	
+func increase_score(s):
+ score += int(s)
+ find_node("Score").update_score()
+ 
+func decrease_lives():
+ lives -= 1
+ find_node("Lives").update_lives()
