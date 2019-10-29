@@ -1,2 +1,1 @@
-# Project-Template-Godot
-A generic template for a Godot project
+A simple paddle ball game.  Play will be able to move paddle back and forth using mouse.  Ball will bounce off paddle and walls.  When the ball collides with the tiles, they will disappear, giving the player points, as updated in the upper left hand corner.  The player has 3 lives, and when the ball leaves the screen, they will lose a life.  There are two levels, a win screen, and a game over screen.
